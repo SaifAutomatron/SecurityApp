@@ -2,16 +2,20 @@
 {% load static %}
 {% block content %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-    <header class="masthead" style="background-image: url('{% static 'assets/img/header-bwg.jpg' %}');">
-        <div class="container">
-            <div class="intro-text">
-                <div><span><br><br><br><br><br><br><br><br><br><br></span></div>
-                <div class="intro-lead-in"><span></span></div>
-                <div class="intro-heading text-uppercase"><span></span></div>
-                <a class="btn btn-primary btn-xl text-uppercase" role="button" href="#services">Tell Me More</a>
-            </div>
+    <header class="masthead position-relative">
+    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 z-n1">
+        <source src="{% static 'assets/videos/header-video.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <div class="intro-text text-white text-center">
+            <div class="intro-lead-in"><br><br><br><br><br><br><br><br><br><br></div>
+            <div class="intro-heading text-uppercase"><span></span></div>
+            <a class="btn btn-primary btn-xl text-uppercase" role="button" href="#services">Tell Me More</a>
         </div>
-    </header>
+    </div>
+</header>
 
  <section class="py-5 bg-light">
     <div class="container">
