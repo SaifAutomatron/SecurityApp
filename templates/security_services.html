@@ -1,115 +1,150 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-
-
-   <header class="masthead" style="background-image: url('{% static 'assets/img/header-bwg.jpg' %}');">
-        <div class="container">
-            <div class="intro-text">
-                <div><span><br><br><br><br><br><br><br><br><br><br></span></div>
-                <div class="intro-lead-in"><span></span></div>
-                <div class="intro-heading text-uppercase"><span></span></div>
-                <a class="btn btn-primary btn-xl text-uppercase" role="button" href="#services">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="Security Services" class="bg-light">
+<<section id="security-services" class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="text-uppercase section-heading">Services</h2>
-                <h3 class="text-muted section-subheading">Our professional solutions tailored for safety and support.</h3>
+        <br><br>
+        <div class="text-center mb-5">
+            <h2 class="text-uppercase text-warning">Our Services</h2>
+            <p class="text-muted">Comprehensive security solutions tailored for various industries and scenarios.</p>
+        </div>
+
+        <!-- National & International Corporations -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/corporate.jpg' %}" alt="Corporate Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">National & International Corporations</h4>
+                <p>Protecting the sensitive information housed within an IT-driven organization is paramount. To achieve this, security services not only safeguard employees, visitors and company assets but also maintain a visible, reassuring presence throughout the facility. Security officers routinely patrol their assigned zones, address any emerging threats and uphold a secure environment.<br>An essential part of their duties is the meticulous logging of all entries and exits, which helps prevent unauthorized removal or copying of data. Moreover, these trained professionals are adept at interacting smoothly with corporate staff.</p>
             </div>
         </div>
-        <div class="row text-center">
-        <div class="col-md-4">
-            <i class="bi bi-shield-lock-fill" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Security Services</h4>
-            <p class="text-muted">Trained security personnel for residential, corporate, and industrial protection.</p>
+
+        <!-- Manufacturing Industry & Processing Units -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'assets/img/security/manufacturing.jpg' %}" alt="Manufacturing Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Manufacturing Industry & Processing Units</h4>
+                <p>Our evaluation starts with an in-depth site survey, after which we roll out tailored training programs that address each location’s unique risks and vulnerabilities.  We determine the scope and severity of potential threats by examining the types of machinery and equipment in use, the specifics of the manufacturing workflow, and the value and transit patterns of in-process goods. <br>Our industrial security offering is built on three core pillars:
+	•	Safeguarding your assets
+	•	Ensuring the safety of your personnel
+	•	Securing the movement of materials</p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <i class="bi bi-person-bounding-box" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Night Patrolling</h4>
-            <p class="text-muted">Reliable mobile security patrols for overnight safety and incident prevention.</p>
+
+        <!-- MNCs & Corporate Houses -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/mncs.jpg' %}" alt="MNC Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">MNCs & Corporate Houses</h4>
+                <p>Simply offering routine security services to a multinational or corporate entity falls short. It’s crucial to grasp the organization’s culture and cultivate the appropriate security mindset among our personnel.<br>As the chosen security partner for an MNC, every member of the Westech Group serves as a guardian for its employees and guests. Our team conducts continual patrols, monitors CCTV feeds vigilantly, and is fully prepared to accommodate high-profile visitors with discretion and professionalism.</p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <i class="bi bi-building-gear" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Facility Management Solutions</h4>
-            <p class="text-muted">Integrated solutions for maintenance, cleaning, and technical operations.</p>
+
+        <!-- Financial Institutions -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'assets/img/security/finance.jpg' %}" alt="Bank Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Financial Institutions</h4>
+                <p>Protecting a financial institution demands expertise few security firms possess. Our services include probing any unusual behaviour by clients or staff to shield the branch’s monetary assets. Rigorous crowd control, secure logistics, and comprehensive record-keeping are also key components of this challenging role. Our specially trained team remains on high alert 24/7, with continuous CCTV monitoring and dedicated surveillance of critical areas such as vaults and safe-deposit lockers.</p>
+            </div>
         </div>
+
+        <!-- Government Organizations & PSUs -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/government.jpg' %}" alt="Government Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">Government Organizations & PSUs</h4>
+                <p>Delivering security isn’t a one-off task but a structured, ongoing system—and that’s the foundation of Westech’s approach for PSUs. We safeguard every facet of your operation: the business itself, your people, physical assets, materials, information and even the surrounding environment.<br>To guarantee secure premises, our professional safety personnel are continuously overseen and supported by round-the-clock CCTV monitoring. They also maintain precise entry and exit logs, ensuring that everyone on site is accounted for and protected at all times.</p>
+            </div>
         </div>
+
+        <!-- Residential Security -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'assets/img/security/residential.jpg' %}" alt="Residential Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Residential Security</h4>
+                <p>All stakeholders from property developers to homeowners—place a premium on residential security. That’s why our Residential Guard Services Package is fully customizable to your exact specifications. We tailor our security plans to suit the unique requirements of condominiums, apartment complexes, and housing communities.<br>Our team is expertly trained to oversee all access points and spot any signs of risk. No matter the size of the property or the circumstances, protecting residential grounds remains their unwavering commitment.</p>
+            </div>
+        </div>
+
+        <!-- Educational Institutions -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/school.jpg' %}" alt="School Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">Educational Institutions</h4>
+                <p>Each school and educational institution faces its own unique security challenges, and in today’s climate, having a robust campus safety plan is essential. Our tailored solutions deploy experienced staff to handle every aspect of school security—from bus attendants ensuring safe transport to gatekeepers blocking unauthorized access. With our all-inclusive security package, we safeguard students, educators, facilities and all campus assets.</p>
+            </div>
+        </div>
+
+        <!-- Events, VVIP & Religious Institutions -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'assets/img/security/events.jpg' %}" alt="Event Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Events, VVIP & Religious Institutions</h4>
+                <p>We scale our manpower to fit each event, adding extra officers whenever required. Our carefully vetted, highly trained teams are primed for rapid response—whether it’s a film premiere or a sold-out rock concert—and work seamlessly alongside local police at any venue.<br>Whether in full uniform, sharp suits or operating covertly, our Close Protection Specialists deliver discreet coverage at home or on the move. From shadowing VIPs on shopping excursions to managing media appearances and paparazzi, we handle route planning, site preparation and logistics to keep everything running smoothly. Serving everyone from sports icons and royalty to executives who prize privacy over publicity, our Security Agents and professional drivers ensure your safety and peace of mind.</p>
+            </div>
+        </div>
+
+        <!-- Hospitality & Retail -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/hospitality.jpg' %}" alt="Hospitality Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">Hospitality & Retail</h4>
+                <p>Ensuring the security of a commercial property starts with fostering positive interactions. We coach our teams to maintain open common areas with a friendly yet firm presence, while also establishing a clear perimeter that deters unauthorized access.<br>In retail environments, we hand-pick personnel skilled in customer engagement who balance approachability with vigilance. They excel at managing high-volume foot traffic—whether welcoming crowds during major sales or coordinating swift evacuations in emergencies. Our comprehensive retail security solution also includes undercover store detectives, centralized control-room supervision, car-park management, and on-site first-aid support.</p>
+            </div>
+        </div>
+
+        <!-- Embassy & Expat Houses -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Embassy & Expat Houses</h4>
+                <p>Diplomatic missions demand uncompromising protection. We deliver professional-grade security services tailored for embassies, consulates, and high commissions, grounded in a proactive defense strategy. Our specialists continuously monitor emerging threats, analyze prevalent vulnerabilities, and adopt industry best practices—translating that intelligence into concrete measures that reinforce our diplomatic security framework.</p>
+            </div>
+        </div>
+
+        <!-- Export Houses & Storage Units -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h4 class="text-warning">Export Houses & Storage Units</h4>
+                <p>Maintaining real-time oversight of warehouse and storage inventory is essential. We verify stock levels using CCTV monitoring alongside systematic inventory checks. Regular audits ensure thorough inspection and upkeep of goods. Leveraging our cutting-edge proprietary software, team members can update reports instantly via cloud-based dashboards—and even share live shipment status in real time.</p>
+            </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'assets/img/security/healthcare.jpg' %}" alt="Healthcare Security" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="text-warning">Healthcare</h4>
+                <p>Security teams stationed at hospitals and nursing homes regularly interact with individuals who require immediate care. Our staff undergoes intensive training to respond to urgent situations with both professionalism and empathy. In these settings, meeting patients’ needs is as important as maintaining a secure environment. That’s why our personnel expertly keep detailed entry and exit logs and vigilantly protect the premises at all times.</p>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+        <h4 class="text-uppercase text-warning">Ready to work together?</h4>
+            <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
+       </div>
     </div>
 </section>
 
-    <section id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/1.jpg' %}" alt="...">
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
-                        </div>
-                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/2.jpg' %}" alt="...">
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/3.jpg' %}"></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/4.jpg' %}"></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part<br>&nbsp;Of Our<br>&nbsp;Story!</h4>
-                            </div>
-                        </li>
-            </ul>
-        </div>
-    </section>
-
-
-    <footer class="footer py-4">
+     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
@@ -126,7 +161,4 @@
         </div>
     </footer>
 
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/agency.js' %}"></script>
-</body>
 {% endblock %}

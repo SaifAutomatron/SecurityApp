@@ -27,17 +27,17 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="#services">Services Overview</a></li>
                             <li><a class="dropdown-item" href="{% url 'security_services' %}">Security Services</a></li>
-                            <li><a class="dropdown-item" href="#responsive-design">Night Patrolling</a></li>
-                            <li><a class="dropdown-item" href="#web-security">Facility Management Solutions</a></li>
+                            <li><a class="dropdown-item" href="{% url 'night_patrolling' %}">Night Patrolling</a></li>
+                            <li><a class="dropdown-item" href="{% url 'facility_management' %}">Facility Management</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Operations </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#">Recruitment</a></li>
-                            <li><a class="dropdown-item" href="#">Training</a></li>
-                            <li><a class="dropdown-item" href="#">Deployment</a></li>
-                            <li><a class="dropdown-item" href="#">Supervision</a></li>
+                            <li><a class="dropdown-item" href="{% url 'recruitment' %}">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="{% url 'training' %}">Training</a></li>
+                            <li><a class="dropdown-item" href="{% url 'deployment' %}">Deployment</a></li>
+                            <li><a class="dropdown-item" href="{% url 'supervision' %}">Supervision</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Compliances</a></li>
