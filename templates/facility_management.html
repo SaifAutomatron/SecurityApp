@@ -2,27 +2,106 @@
 {% load static %}
 {% block content %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+<section id="facility-management" class="py-5">
+    <div class="container">
+        <br><br><br>
+        <div class="text-center mb-5">
+            <h2 class="text-uppercase text-warning">Our Services</h2>
+        </div>
 
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/security/facility_management.jpg' %}" alt="Facility Management" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-warning">Facility Management</h2>
+                <p>
+                    We offer comprehensive facility management solutions tailored to meet the needs of commercial, corporate, government, residential, and industrial clients. Our services span across housekeeping, landscaping, equipment maintenance, and more—ensuring seamless operations and superior cleanliness.
+                </p>
+                <p>
+                    With a structured approach and multiple quality assurance protocols, we perform regular audits and maintain ISO-certified standards. Our front-end and back-end teams work cohesively to deliver smooth, efficient facility operations and labor provisioning.
+                </p>
 
+                <p><strong>Housekeeping Services</strong></p>
+                <p>
+                    We recognize that cleanliness and hygiene are critical for productivity and morale. Our trained housekeeping staff ensure your premises are spotless and germ-free. Our services include:
+                </p>
+                <ul>
+                    <li>Pantry & cafeteria upkeep</li>
+                    <li>Cleaning, vacuuming, and scrubbing</li>
+                    <li>Chair & sofa shampooing</li>
+                    <li>Washroom and common area maintenance</li>
+                    <li>Cabin & workstation cleaning</li>
+                    <li>Polishing, sanitization, and façade washing</li>
+                </ul>
 
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
+                <p><strong>Gardening & Landscaping</strong></p>
+                <p>
+                    We design and maintain both basic and elaborate landscaping tailored to your preference. Our horticulture experts uphold healthy plant growth and proper pruning, maintaining visual appeal and environmental standards.
+                </p>
+                <ul>
+                    <li>Regular plant maintenance and pruning</li>
+                    <li>Asset logs for plant species, condition, and schedule</li>
+                    <li>Expert landscaping for indoor and outdoor areas</li>
+                </ul>
+
+                <p><strong>Carpet & Upholstery Care</strong></p>
+                <p>
+                    We provide deep-cleaning services for carpets and upholstery using eco-friendly solutions that reduce allergens and extend material life.
+                </p>
+                <ul>
+                    <li>Dust, stain, and wear protection</li>
+                    <li>Allergy reduction and odor control</li>
+                    <li>Green cleaning products for healthy spaces</li>
+                </ul>
+
+                <p><strong>Specialized Services</strong></p>
+                <ul>
+                    <li>Marble crystallization & floor care</li>
+                    <li>Façade and glass cleaning</li>
+                    <li>Guest house/apartment management</li>
+                    <li>Pest control and sanitization</li>
+                    <li>Fire & safety system management</li>
+                    <li>Front office operations</li>
+                </ul>
+
+                <p><strong>Building Maintenance & Utility Services</strong></p>
+                <p>
+                    We support the infrastructure behind every property to ensure safety, comfort, and operational continuity. Our services include:
+                </p>
+                <ul>
+                    <li>Electrical systems, UPS, and DG maintenance</li>
+                    <li>HVAC, plumbing, water supply, and sewage systems</li>
+                    <li>Minor repairs, carpentry, and masonry</li>
+                    <li>Energy management, environmental control, and damage mitigation</li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="text-center mt-5">
+        <h4 class="text-uppercase text-warning">Need a reliable Facility Management Partner?</h4>
+        <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
+    </div>
+</section>
 
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/agency.js' %}"></script>
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">© RS Nineteen Security Services 2025</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/agency.js' %}"></script>
 </body>
 {% endblock %}

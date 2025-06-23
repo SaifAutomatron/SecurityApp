@@ -18,7 +18,7 @@ SECRET_KEY = '<your-secret-key>'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['rsnineteen-17f270f81e7a.herokuapp.com','*']  # Change to your domain/heroku app in production
+ALLOWED_HOSTS = ['rsnineteen-17f270f81e7a.herokuapp.com']  # Change to your domain/heroku app in production
 
 
 # Application definition

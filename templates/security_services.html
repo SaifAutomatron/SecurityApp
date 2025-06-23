@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<<section id="security-services" class="py-5">
+ <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+<section id="security-services" class="py-5">
     <div class="container">
         <br><br>
         <div class="text-center mb-5">
@@ -147,7 +148,7 @@
      <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
+                <div class="col-lg-4 text-lg-start">© RS Nineteen Security Services 2025</div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
@@ -160,5 +161,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/agency.js' %}"></script>
+    </body>
 {% endblock %}
