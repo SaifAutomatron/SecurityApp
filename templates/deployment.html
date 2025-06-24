@@ -1,11 +1,53 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+<section id="deployment" class="py-5">
+    <div class="container">
+        <br><br><br>
+        <div class="text-center mb-5">
+            <h2 class="text-uppercase text-warning">Operations: Deployment</h2>
+            <p class="text-muted">Ensuring the highest standards in security deployment across all touchpoints.</p>
+        </div>
 
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/operations/deployment.jpg' %}" alt="Deployment" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">Vigilant Guard Deployment</h4>
+                <p>We at RS Nineteen leave no stone unturned in deploying the most effective and alert personnel for client safety. Guards maintain 24/7 vigilance, record meticulous entry/exit logs, and observe every visitor's behavior.</p>
+                <p>On-ground supervisors, equipped with radios and mobile phones, ensure real-time monitoring and performance checks across all assignments, sustaining an efficient ecosystem of responsive security personnel.</p>
+            </div>
+        </div>
 
+        <div class="mb-5">
+            <h4 class="text-warning">24-Hour Control Room</h4>
+            <p>Our modern control room monitors all emergency incidents—medical, criminal, fire—responding with utmost urgency. Alarms triggered at client locations are managed instantly by trained control officers who assess and direct the proper response.</p>
+        </div>
 
-    <footer class="footer py-4">
+        <div class="mb-5">
+            <h4 class="text-warning">CCTV Surveillance</h4>
+            <p>Using high-tech CCTV equipment including PTZ cameras, DVRs, and monitoring dashboards, we ensure complete surveillance coverage of sensitive premises like malls, offices, and jewelry shops. Skilled operators handle both live and recorded feeds to maintain constant oversight.</p>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="text-warning">Quick Response Teams (QRTs)</h4>
+            <p>Our QRTs are trained to mobilize within 2 hours for any incident. Armed with critical gear—ropes, batons, torches, first-aid—they include marshals, guards, and bouncers ready for rapid intervention and resolution of crises.</p>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="text-warning">Technologically Skilled Security</h4>
+            <p>RS Nineteen blends human vigilance with modern technology. Our staff are trained in onboarding software, digital surveillance, and monitoring tools. Whether logging entries or detecting anomalies via CCTV, they’re fully tech-enabled to serve evolving needs.</p>
+        </div>
+
+        <div class="text-center mt-5">
+            <h4 class="text-uppercase text-warning">Ready to work together?</h4>
+            <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+  <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">© RS Nineteen Security Services 2025</div>
@@ -24,5 +66,4 @@
 
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/agency.js' %}"></script>
-</body>
 {% endblock %}
