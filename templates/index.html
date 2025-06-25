@@ -3,15 +3,9 @@
 {% block content %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
 
-<header class="masthead position-relative" style="height: 100vh;">
-    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 z-n1">
-        <source src="{% static 'assets/videos/header-video.mp4' %}" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<header class="masthead position-relative" style="height: 100vh; background-image: url('{% static "assets/img/header-background.jpg" %}'); background-size: cover; background-position: center;">
 
     <div class="container h-100 position-relative">
-
-        <!-- Bottom-Aligned Button -->
         <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5">
             <a class="btn btn-warning btn-xl fw-bold text-uppercase" href="#services">Tell Me More</a>
         </div>
@@ -120,8 +114,8 @@
                 <p class="lead">
                     We follow internationally accepted security protocols and best practices, ensuring professional-grade safety at every level. Over the years, we have become India’s most innovative and reliable security solutions provider.
                 </p>
-                <p>
-                    With strong roots in India and extensive experience, we are committed to building a safer nation. We proudly stand guard to protect people and property—ensuring peace of mind for every client we serve.
+                <p class="lead">
+                    With strong roots in India and extensive experience, we are committed to building a safer nation. We proudly stand guard to protect people and property ensuring peace of mind for every client we serve.
                 </p>
             </div>
         </div>
@@ -222,7 +216,7 @@
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen Security Services 2025</div>
+                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
