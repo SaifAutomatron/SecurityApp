@@ -1,0 +1,17 @@
+
+#mainNav {
+  height: 80px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+#mainNav .navbar-nav .nav-link {
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 80px;
+  vertical-align: middle;
+}
