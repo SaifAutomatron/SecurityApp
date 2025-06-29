@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 from core.views import home, contact_us, about, security_services, night_patrolling, facility_management, deployment, \
-    training, supervision, recruitment
+    training, supervision, recruitment, camera_monitoring
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,4 +38,6 @@ path('training/', training, name='training'),
 path('supervision/', supervision, name='supervision'),
 
 path('recruitment/', recruitment, name='recruitment'),
+
+path('camera_monitoring/', camera_monitoring, name='camera_monitoring'),
 ]

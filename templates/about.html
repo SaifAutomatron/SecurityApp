@@ -2,167 +2,90 @@
 {% load static %}
 {% block content %}
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-<header class="masthead d-flex align-items-end" style="background-image: url('{% static 'assets/img/header-bwg.jpg' %}'); height: 100vh; background-size: cover; background-position: center;">
-    <div class="container pb-5">
-        <div class="intro-text text-center">
-            <div class="intro-heading text-uppercase banner-text text-white fw-bold fs-1">
-                We are a leading private security company
-            </div>
+<header class="masthead d-flex flex-column justify-content-end">
+  <div class="carousel-item active" style="background-image: url('{% static "assets/img/slide1.jpg" %}'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="text-white fw-bold">Guarding You With Discipline And Duty</h1>
         </div>
-    </div>
+      </div>
 </header>
     <section id="services">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-uppercase section-heading">Services</h2>
+                <h2 class="text-uppercase text-warning">Services</h2>
                 <h3 class="text-muted section-subheading">Our professional solutions tailored for safety and support.</h3>
             </div>
         </div>
         <div class="row text-center">
-        <div class="col-md-4">
+          <div class="col-md-3">
             <i class="bi bi-shield-lock-fill" style="font-size: 3rem; color: #ffc107;"></i>
             <h4 class="section-heading mt-3">Security Services</h4>
-            <p class="text-muted">Trained security personnel for residential, corporate, and industrial protection.</p>
-        </div>
-        <div class="col-md-4">
+            <p class="text-muted">We provide well-trained and licensed security personnel for comprehensive protection of residential areas, business offices, events, and industrial premises.</p>
+          </div>
+          <div class="col-md-3">
             <i class="bi bi-person-bounding-box" style="font-size: 3rem; color: #ffc107;"></i>
             <h4 class="section-heading mt-3">Night Patrolling</h4>
-            <p class="text-muted">Reliable mobile security patrols for overnight safety and incident prevention.</p>
-        </div>
-        <div class="col-md-4">
+            <p class="text-muted">Our mobile night patrol teams ensure your premises remain secure and constantly monitored after hours to deter any suspicious activity or potential threat.</p>
+          </div>
+          <div class="col-md-3">
             <i class="bi bi-building-gear" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Facility Management Solutions</h4>
-            <p class="text-muted">Integrated solutions for maintenance, cleaning, and technical operations.</p>
-        </div>
-        </div>
-    </div>
+            <h4 class="section-heading mt-3">Facility Management</h4>
+            <p class="text-muted">We offer integrated facility management including cleaning, landscaping, and maintenance services to keep your property well-maintained and efficient.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-camera-video-fill" style="font-size: 3rem; color: #ffc107;"></i>
+            <h4 class="section-heading mt-3">Camera Monitoring</h4>
+            <p class="text-muted">Our advanced CCTV surveillance systems ensure real-time monitoring, rapid incident response, and complete video oversight of sensitive zones 24/7.</p>
+          </div>
+     </div>
 </section>
 
     <section id="about">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="text-uppercase text-warning">About Us</h2>
+                <p class="lead text-center text-muted">
+                  RS Nineteen is a leading private security solutions provider committed to safeguarding lives and property with unwavering discipline and integrity.
+                  Backed by a team of trained professionals and certified under ISO 9001:2015 and PSARA, we deliver top-tier services ranging from on-site security, night patrolling, and facility management to cutting-edge camera monitoring solutions.
+                  Our core values center around reliability, vigilance, and continuous innovation to meet the dynamic needs of our clients across residential, corporate, and industrial sectors.
+                </p>
             </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/1.jpg' %}" alt="...">
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
-                        </div>
-                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/2.jpg' %}" alt="...">
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="{% static 'assets/img/about/3.jpg' %}"></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'assets/img/about/4.jpg' %}"></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part<br>&nbsp;Of Our<br>&nbsp;Story!</h4>
-                            </div>
-                        </li>
-            </ul>
         </div>
     </section>
    
-   <section class="bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg' %}" alt="...">
-                        <h4>Rakshanda Naiem</h4>
-                        <p class="text-muted">Founder & Managing Director</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Kay Garland Twitter Profile"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Kay Garland Facebook Profile"><i class="fa fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Kay Garland LinkedIn Profile"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpg' %}" alt="...">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fa fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/3.jpg' %}" alt="...">
-                        <h4>Diana Petersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fa fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+  <section class="bg-light py-5" id="team">
+  <div class="container">
+    <div class="text-center mb-5">
+        <h2 class="text-uppercase text-warning">About Managing Director</h2>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <img class="img-fluid rounded-circle shadow" src="{% static 'assets/img/team/1.jpg' %}" alt="Rakshanda Naiem" style="width: 250px; height: 250px; object-fit: cover;">
+        <h3 class="mt-4">Ms. Rakshanda Naiem</h3>
+        <p class="text-muted">Managing Director</p>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-dark btn-social mx-2" href="#"><i class="fa fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#"><i class="fa fa-linkedin"></i></a>
         </div>
-    </section>
-
-
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+      </div>
+      <div class="col-lg-8">
+        <p class="lead">
+          With a vision to build a safer community, Rakshanda founded RS Nineteen to redefine excellence in the private security sector.
+          Her leadership is grounded in discipline, integrity, and a relentless commitment to client satisfaction.
+        </p>
+        <p class="lead">
+          With over a decade of experience in managing operational excellence and compliance-driven environments,
+          she has transformed RS Nineteen into a trusted name in security services. Under her guidance, the company has grown into a multi-service provider offering on-ground security, patrolling, facility management, and CCTV monitoring.
+        </p>
+        <p class="lead">
+          Ms. Naiem believes in continuous learning, rigorous training, and technological integration to stay ahead of emerging security challenges. Her dedication is the cornerstone of RS Nineteen's success.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/agency.js' %}"></script>
 </body>

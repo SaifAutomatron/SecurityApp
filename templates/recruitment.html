@@ -1,68 +1,38 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+<section class="py-5 bg-light" style="padding-top: 1000px;"></section>    
 <section class="py-5 bg-light" id="recruitment">
-    <br><br><br>
-    
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="text-uppercase text-warning">Operations: Recruitment</h2>
-        </div>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="{% static 'assets/img/recruitment/guard.jpg' %}" class="img-fluid rounded shadow" alt="Westech Security Personnel">
-            </div>
-            <div class="col-md-6">
-                <p>Each security personnel at RS Nineteen is chosen with great care and attention to detail. The Internal Security Department rigorously vets every prospective employee by running background checks against them. It is only after qualifying these stages that a candidate becomes a member of the RS Nineteen family.</p>
-            </div>
-        </div>
-        
-            <div class="row mb-5">
-            <div class="col">
-                <h5 class="text-warning">They have to adhere to stringent parameters which include:</h5>
-                <ul>
-                    <li>Basic Documentation, ESIC & PF Forms</li>
-                    <li>Photo ID Check & Residential Verification</li>
-                    <li>Previous Employment & Reference Check</li>
-                    <li>Medical Check & Mental Health Analysis</li>
-                    <li>Exit Interview from Previous Company</li>
-                    <li>Discreet Checks: Integrity and Aptitude test</li>
-                    <li>Educational & Police Verification</li>
-                    <li>Physical Verification: Height and Weight</li>
-                    <li>Vaccination Status</li>
-                </ul>
-            </div>
+            <h2 class="text-uppercase text-warning">Recruitment</h2>
         </div>
 
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 offset-md-3">
-                <img src="{% static 'assets/img/recruitment/training.jpg' %}" class="img-fluid rounded shadow" alt="Training Session">
-            </div>
-        </div>   
-           <div class="text-center mt-5">
+        <div class="mb-5">
+            <p>Each security personnel at RS Nineteen is chosen with great care and attention to detail. The Internal Security Department rigorously vets every prospective employee by running background checks against them. It is only after qualifying these stages that a candidate becomes a member of the RS Nineteen family.</p>
+        </div>
+        
+        <div class="mb-5">
+            <h5 class="text-warning">They have to adhere to stringent parameters which include:</h5>
+            <ul>
+                <li>Basic Documentation, ESIC &amp; PF Forms</li>
+                <li>Photo ID Check &amp; Residential Verification</li>
+                <li>Previous Employment &amp; Reference Check</li>
+                <li>Medical Check &amp; Mental Health Analysis</li>
+                <li>Exit Interview from Previous Company</li>
+                <li>Discreet Checks: Integrity and Aptitude Test</li>
+                <li>Educational &amp; Police Verification</li>
+                <li>Physical Verification: Height and Weight</li>
+                <li>Vaccination Status</li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-5">
             <h4 class="text-uppercase text-warning">Ready to work together?</h4>
             <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
         </div>
     </div>
 </section>
-<footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/agency.js' %}"></script>
-{% endblock %}     
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/agency.js' %}"></script>
+{% endblock %}

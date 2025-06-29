@@ -1,132 +1,129 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block content %}
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
 
-<header class="masthead position-relative" style="height: 100vh; background-image: url('{% static "assets/img/header-background.jpg" %}'); background-size: cover; background-position: center;">
+<!-- Hero Section -->
+<header>
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-    <div class="container h-100 position-relative">
-        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5">
-            <a class="btn btn-warning btn-xl fw-bold text-uppercase" href="#services">Tell Me More</a>
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('{% static "assets/img/slide1.jpg" %}'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="text-white fw-bold">Welcome to RS Nineteen</h1>
+          <p class="text-light fst-italic">Guarding You With Discipline And Duty</p>
         </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('{% static "assets/img/slide1.jpg" %}'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="text-white fw-bold">Our Services</h1>
+          <p class="text-light fst-italic">Security Services, Night Patrolling, Facility Management, Camera Monitoring</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('{% static "assets/img/slide1.jpg" %}'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="text-white fw-bold">Committed to Your Safety</h1>
+          <p class="text-light fst-italic">Ensuring peace of mind with reliable security solutions</p>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 </header>
 
- <section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5 fw-bold">Safeguarding Your World Since 20XX</h2>
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="p-4 bg-white shadow-sm text-center h-100">
-                            <i class="fa fa-home fa-2x mb-3 text-primary"></i>
-                            <h2 class="fw-bold"><span class="count" data-count="3">0</span>+ Years</h2>
-                            <p class="mb-0 fw-semibold">Experience</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="p-4 bg-white shadow-sm text-center h-100">
-                            <i class="fa fa-users fa-2x mb-3 text-primary"></i>
-                            <h2 class="fw-bold"><span class="count" data-count="24">0</span> x 7</h2>
-                            <p class="mb-0 fw-semibold">Support</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="p-4 bg-white shadow-sm text-center h-100">
-                            <i class="fa fa-building fa-2x mb-3 text-primary"></i>
-                            <h2 class="fw-bold"><span class="count" data-count="1">0</span>+</h2>
-                            <p class="mb-0 fw-semibold">Offices</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="p-4 bg-white shadow-sm text-center h-100">
-                            <i class="fa fa-trophy fa-2x mb-3 text-primary"></i>
-                            <h2 class="fw-bold"><span class="count" data-count="100">0</span>%</h2>
-                            <p class="mb-0 fw-semibold">Satisfied Customers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0 text-center">
-                <img src="{% static 'assets/img/security-guard.jpg' %}" class="img-fluid rounded shadow-sm" alt="Security Guard">
-            </div>
-        </div>
+<section class="py-5 bg-light">
+  <div class="container">
+      <h2 class="text-uppercase text-warning">Guarding You With Discipline And Duty</h2>
+    <div class="row justify-content-center">
+        <p class="lead text-center text-muted">
+          RS Nineteen is a leading private security solutions provider committed to safeguarding lives and property with unwavering discipline and integrity.
+          Backed by a team of trained professionals and certified under ISO 9001:2015 and PSARA, we deliver top-tier services ranging from on-site security, night patrolling, and facility management to cutting-edge camera monitoring solutions.
+          Our core values center around reliability, vigilance, and continuous innovation to meet the dynamic needs of our clients across residential, corporate, and industrial sectors.
+        </p>
     </div>
+  </div>
 </section>
 
-<style>
-  .private-security2 h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  .private-security2 h5 {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-  }
-  .sinceBox {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-</style>
-
-   <section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="text-uppercase section-heading">Services</h2>
-                <h3 class="text-muted section-subheading">Our professional solutions tailored for safety and support.</h3>
-            </div>
-        </div>
-        <div class="row text-center">
-        <div class="col-md-4">
-            <i class="bi bi-shield-lock-fill" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Security Services</h4>
-            <p class="text-muted">Trained security personnel for residential, corporate, and industrial protection.</p>
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-person-bounding-box" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Night Patrolling</h4>
-            <p class="text-muted">Reliable mobile security patrols for overnight safety and incident prevention.</p>
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-building-gear" style="font-size: 3rem; color: #ffc107;"></i>
-            <h4 class="section-heading mt-3">Facility Management Solutions</h4>
-            <p class="text-muted">Integrated solutions for maintenance, cleaning, and technical operations.</p>
-        </div>
-        </div>
+<!-- Services Section -->
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <h2 class="text-uppercase text-warning">Services</h2>
+        <h3 class="text-muted section-subheading">Our professional solutions tailored for safety and support.</h3>
+      </div>
     </div>
+
+    <div class="row text-center">
+      <div class="col-md-3">
+        <i class="bi bi-shield-lock-fill" style="font-size: 3rem; color: #ffc107;"></i>
+        <h4 class="section-heading mt-3">Security Services</h4>
+        <p class="text-muted">We provide well-trained and licensed security personnel for comprehensive protection of residential areas, business offices, events, and industrial premises.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-person-bounding-box" style="font-size: 3rem; color: #ffc107;"></i>
+        <h4 class="section-heading mt-3">Night Patrolling</h4>
+        <p class="text-muted">Our mobile night patrol teams ensure your premises remain secure and constantly monitored after hours to deter any suspicious activity or potential threat.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-building-gear" style="font-size: 3rem; color: #ffc107;"></i>
+        <h4 class="section-heading mt-3">Facility Management</h4>
+        <p class="text-muted">We offer integrated facility management including cleaning, landscaping, and maintenance services to keep your property well-maintained and efficient.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-camera-video-fill" style="font-size: 3rem; color: #ffc107;"></i>
+        <h4 class="section-heading mt-3">Camera Monitoring</h4>
+        <p class="text-muted">Our advanced CCTV surveillance systems ensure real-time monitoring, rapid incident response, and complete video oversight of sensitive zones 24/7.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Why Us Section -->
 <section class="py-5" id="why-us">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="text-uppercase text-warning">Why Us?</h2>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="{% static 'assets/img/security/why-us.jpg' %}" alt="Why Choose Us" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <p class="lead">
-                    We follow internationally accepted security protocols and best practices, ensuring professional-grade safety at every level. Over the years, we have become India’s most innovative and reliable security solutions provider.
-                </p>
-                <p class="lead">
-                    With strong roots in India and extensive experience, we are committed to building a safer nation. We proudly stand guard to protect people and property ensuring peace of mind for every client we serve.
-                </p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-uppercase text-warning">Why Us?</h2>
     </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="placeholder bg-light border rounded shadow-sm d-flex align-items-center justify-content-center" style="height: 300px;">
+          <span class="text-muted">Image coming soon</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p class="lead">
+          We follow internationally accepted security protocols and best practices, ensuring professional-grade safety at every level. Over the years, we have become India’s most innovative and reliable security solutions provider.
+        </p>
+        <p class="lead">
+          With strong roots in India and extensive experience, we are committed to building a safer nation. We proudly stand guard to protect people and property ensuring peace of mind for every client we serve.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Vision and Mission Section -->
 <section class="py-5 bg-dark text-white">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="{% static 'assets/img/vision-mission.jpg' %}" class="img-fluid rounded shadow" alt="Security Team Vision">
+        <div class="placeholder bg-secondary text-white rounded shadow-sm d-flex align-items-center justify-content-center" style="height: 300px;">
+          <span class="opacity-75">Vision &amp; Mission Image Placeholder</span>
+        </div>
       </div>
       <div class="col-lg-6 mt-4 mt-lg-0">
         <h6 class="text-uppercase text-warning">Our Vision</h6>
@@ -141,97 +138,15 @@
   </div>
 </section>
 
+<section class="py-5 bg-light" id="recruitment">
+     <div class="text-center mt-5">
+        <h4 class="text-uppercase text-warning">Ready to work together?</h4>
+        <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
+     </div>
+</section>
 
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/agency.js' %}"></script>
+<script src="{% static 'assets/js/counter.js' %}"></script>
 
-    <section class="bg-light" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Compliances</h2>
-                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 portfolio-item">
-                    <a class="portfolio-link" href="#portfolioModal1" data-bs-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'assets/img/portfolio/1-thumbnail.jpg' %}" alt="...">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Birla Vidya Niketan January 2025</h4>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 portfolio-item">
-                    <a class="portfolio-link" href="#portfolioModal2" data-bs-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'assets/img/portfolio/2-thumbnail.jpg' %}" alt="...">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Birla Vidya Niketan February 2025</h4>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 portfolio-item">
-                    <a class="portfolio-link" href="#portfolioModal3" data-bs-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="{% static 'assets/img/portfolio/3-thumbnail.jpg' %}" alt="...">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Birla Vidya Niketan December 2024</h4>
-                    </div>
-                </div>
-                <!-- Repeat more items if needed -->
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/clients/envato.jpg' %}" alt="...">
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/clients/designmodo.jpg' %}" alt="...">
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/clients/themeforest.jpg' %}" alt="...">
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/clients/creative-market.jpg' %}" alt="...">
-                </div>
-            </div>
-        </div>
-         <div class="text-center mt-5">
-            <h4 class="text-uppercase text-warning">Ready to work together?</h4>
-            <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
-        </div>
-    </section>
-
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/agency.js' %}"></script>
-     <script src="{% static 'assets/js/counter.js' %}"></script>
-</body>
 {% endblock %}

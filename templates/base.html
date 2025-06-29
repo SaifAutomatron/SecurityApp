@@ -13,49 +13,52 @@
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
   <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">RS Nineteen</a>
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+        <img src="{% static 'assets/img/logo.png' %}" alt="RS Nineteen Logo" style="height: 80px; max-height: 80px;">
+     </a>
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
               aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
-  <ul class="navbar-nav ms-auto text-uppercase">
+        <ul class="navbar-nav ms-auto text-uppercase">
 
-    <!-- Services Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-         data-bs-toggle="dropdown" aria-expanded="false">
-        Services
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
-        <li><a class="dropdown-item" href="{% url 'security_services' %}">Security Services</a></li>
-        <li><a class="dropdown-item" href="{% url 'night_patrolling' %}">Night Patrolling</a></li>
-        <li><a class="dropdown-item" href="{% url 'facility_management' %}">Facility Management</a></li>
-      </ul>
-    </li>
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="{% url 'security_services' %}">Security Services</a></li>
+              <li><a class="dropdown-item" href="{% url 'night_patrolling' %}">Night Patrolling</a></li>
+              <li><a class="dropdown-item" href="{% url 'facility_management' %}">Facility Management</a></li>
+              <li><a class="dropdown-item" href="{% url 'camera_monitoring' %}">Camera Monitoring</a></li>
+            </ul>
+          </li>
 
-    <!-- Operations Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="operationsDropdown" role="button"
-         data-bs-toggle="dropdown" aria-expanded="false">
-        Operations
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="operationsDropdown">
-        <li><a class="dropdown-item" href="{% url 'recruitment' %}">Recruitment</a></li>
-        <li><a class="dropdown-item" href="{% url 'training' %}">Training</a></li>
-        <li><a class="dropdown-item" href="{% url 'deployment' %}">Deployment</a></li>
-        <li><a class="dropdown-item" href="{% url 'supervision' %}">Supervision</a></li>
-      </ul>
-    </li>
+          <!-- Operations Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="operationsDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Operations
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="operationsDropdown">
+              <li><a class="dropdown-item" href="{% url 'recruitment' %}">Recruitment</a></li>
+              <li><a class="dropdown-item" href="{% url 'training' %}">Training</a></li>
+              <li><a class="dropdown-item" href="{% url 'deployment' %}">Deployment</a></li>
+              <li><a class="dropdown-item" href="{% url 'supervision' %}">Supervision</a></li>
+            </ul>
+          </li>
 
-    <!-- Other Links -->
-    <li class="nav-item"><a class="nav-link" href="#portfolio">Compliances</a></li>
-    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
-  </ul>
-</div>
+          <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -65,4 +68,56 @@
   <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/js/script.js' %}"></script>
 </body>
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4"> <!-- added spacing -->
+
+      <!-- Logo + Description - take half width -->
+      <div class="col-md-6">
+        <img src="{% static 'assets/img/rs-logo.png' %}" alt="RS Nineteen Logo" class="mb-3" style="height: 100px;">
+        <p style="line-height: 1.8;">
+          We are an <strong>ISO 9001:2015</strong> certified company and possess
+          <strong>PSARA License</strong> under Psara Act 2005 and strictly follow
+          the guidelines of PSARA while deploying our security staff.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3">QUICK LINKS</h5>
+        <ul class="list-unstyled">
+          <li><a href="{% url 'about' %}" class="text-white text-decoration-none">About</a></li>
+          <li><a href="{% url 'security_services' %}" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="{% url 'recruitment' %}" class="text-white text-decoration-none">Operations</a></li>
+          <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3">OUR SERVICES</h5>
+        <ul class="list-unstyled">
+         <li><a class="dropdown-item" href="{% url 'security_services' %}">Security Services</a></li>
+         <li><a class="dropdown-item" href="{% url 'night_patrolling' %}">Night Patrolling</a></li>
+         <li><a class="dropdown-item" href="{% url 'facility_management' %}">Facility Management</a></li>
+         <li><a class="dropdown-item" href="{% url 'camera_monitoring' %}">Camera Monitoring</a></li>
+        </ul>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3">SOCIAL</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Twitter</a></li>
+          <li><a href="#" class="text-white text-decoration-none">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light my-4">
+    <div class="text-center small">© RS Nineteen 2025. All Rights Reserved.</div>
+  </div>
+</footer>
 </html>

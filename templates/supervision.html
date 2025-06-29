@@ -1,80 +1,54 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
+<section class="py-5 bg-light" style="padding-top: 100px;"></section>    
+
 <section id="supervision" class="py-5">
-    <div class="container">
-        <br><br><br>
-        <div class="text-center mb-5">
-            <h2 class="text-uppercase text-warning">Operations: Supervision</h2>
-        </div>
-
-        <!-- On-Ground Supervision -->
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="{% static 'assets/img/operations/supervision.jpg' %}" alt="Supervision" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h4 class="text-warning">Active On-the-Ground Supervision</h4>
-                <p>To maintain high service standards, we prioritize intensive and proactive on-the-ground supervision. A strong Operations team consisting of Managers, Security Officers, and Patrolling Supervisors conducts around-the-clock inspections across all deployments. Equipped with radio communication and mobile devices, they ensure seamless security management and rapid response.</p>
-            </div>
-        </div>
-
-        <!-- Site Monitoring -->
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 order-md-2">
-                <img src="{% static 'assets/img/operations/site-monitoring.jpg' %}" alt="Site Monitoring" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h4 class="text-warning">Site Monitoring</h4>
-                <p>Before onboarding any assignment, our Operations team conducts a comprehensive site inspection to understand security requirements. Based on this survey, we design a tailored security strategy which includes: duties charter, client expectations, emergency protocols, and detailed post instructions—formulated in collaboration with the client.</p>
-            </div>
-        </div>
-
-        <!-- Client Relations -->
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="{% static 'assets/img/operations/client-relations.jpg' %}" alt="Client Relations" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h4 class="text-warning">Client Relations</h4>
-                <p>At Westech, customer satisfaction is a long-standing tradition. We build strong relationships by understanding client needs, anticipating their expectations, and proactively managing concerns. Constructive feedback has helped us prevent potential issues and expand our list of satisfied customers.</p>
-            </div>
-        </div>
-
-        <!-- Client Feedback -->
-        <div class="row align-items-center">
-            <div class="col-md-6 order-md-2">
-                <img src="{% static 'assets/img/operations/feedback.jpg' %}" alt="Client Feedback" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 order-md-1">
-                <h4 class="text-warning">Client Feedback</h4>
-                <p>To continuously improve our services, we encourage ongoing client feedback. This system not only enables timely corrective measures but also helps us evolve and align our operations with the highest standards of client satisfaction.</p>
-            </div>
-        </div>
-
-        <div class="text-center mt-5">
-            <h4 class="text-uppercase text-warning">Ready to work together?</h4>
-            <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
-        </div>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-uppercase text-warning">Supervision</h2>
     </div>
-</section>
-  <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'assets/js/agency.js' %}"></script>
+    <div class="text-center mb-4">
+      <img src="{% static 'assets/img/operations/supervision.jpg' %}" alt="Supervision Team" class="img-fluid rounded shadow w-75">
+    </div>
+
+    <div class="row mb-4">
+      <div class="col">
+        <h4 class="text-warning">Dedicated Field Oversight</h4>
+        <p>At RS Nineteen, we believe that consistent supervision is the backbone of quality security service. Our supervisors and area officers actively monitor all deployed locations, ensuring guard alertness, discipline, and adherence to site instructions.</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col">
+        <h4 class="text-warning">Site-Specific Planning</h4>
+        <p>Each site is unique. We begin by conducting a detailed survey to assess security vulnerabilities, entry points, and client expectations. This helps us formulate a strategic deployment plan tailored to every project we undertake.</p>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col">
+        <h4 class="text-warning">Client Collaboration</h4>
+        <p>Our operations team works closely with clients to understand their environment and business needs. Regular reviews and meetings are held to ensure that our security personnel and procedures remain aligned with evolving expectations.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h4 class="text-warning">Commitment to Excellence</h4>
+        <p>We maintain a responsive feedback mechanism that allows clients to report concerns or commend good work. Our supervision team addresses each input promptly, ensuring continuous improvement and client satisfaction.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <h4 class="text-uppercase text-warning">Ready to work together?</h4>
+      <a class="btn btn-outline-warning mt-3" href="{% url 'contact' %}">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/agency.js' %}"></script>
 {% endblock %}

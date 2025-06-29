@@ -33,4 +33,6 @@ def supervision(request):
 def recruitment(request):
     return render(request, 'recruitment.html')
 
+def camera_monitoring(request):
+    return render(request, 'camera_monitoring.html')
 

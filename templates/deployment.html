@@ -1,24 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<section class="py-5 bg-light" style="padding-top: 1000px;"></section>     
 <section id="deployment" class="py-5">
     <div class="container">
-        <br><br><br>
         <div class="text-center mb-5">
-            <h2 class="text-uppercase text-warning">Operations: Deployment</h2>
+            <h2 class="text-uppercase text-warning">Deployment</h2>
             <p class="text-muted">Ensuring the highest standards in security deployment across all touchpoints.</p>
         </div>
-
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="{% static 'assets/img/operations/deployment.jpg' %}" alt="Deployment" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6">
-                <h4 class="text-warning">Vigilant Guard Deployment</h4>
-                <p>We at RS Nineteen leave no stone unturned in deploying the most effective and alert personnel for client safety. Guards maintain 24/7 vigilance, record meticulous entry/exit logs, and observe every visitor's behavior.</p>
-                <p>On-ground supervisors, equipped with radios and mobile phones, ensure real-time monitoring and performance checks across all assignments, sustaining an efficient ecosystem of responsive security personnel.</p>
-            </div>
-        </div>
+        
+         <div class="mb-5">
+             <h4 class="text-warning">Vigilant Guard Deployment</h4>
+              <p>We at RS Nineteen leave no stone unturned in deploying the most effective and alert personnel for client safety. Guards maintain 24/7 vigilance, record meticulous entry/exit logs, and observe every visitor's behavior.</p>
+              <p>On-ground supervisors, equipped with radios and mobile phones, ensure real-time monitoring and performance checks across all assignments, sustaining an efficient ecosystem of responsive security personnel.</p>
+         </div>
 
         <div class="mb-5">
             <h4 class="text-warning">24-Hour Control Room</h4>
@@ -46,24 +41,6 @@
         </div>
     </div>
 </section>
-
-  <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">© RS Nineteen 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-   </footer>
-
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/agency.js' %}"></script>
 {% endblock %}
